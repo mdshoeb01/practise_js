@@ -17,4 +17,21 @@ function selection_sort(a){
 }
 
 var a=[3,5,66,78,23,44,11,32,58];
-console.log(selection_sort(a));
+//console.log(selection_sort(a));
+
+//insertion_sort
+function insertion_sort(a){
+  for(let i=0;i<a.length;i++){
+    let cur=a[i];
+    let index=i-1;
+    while(index>=0 && a[index]>  cur){
+      a[index+1]=a[index];
+      index-=1;
+    }
+    a[index+1]=cur;
+
+  }
+}
+
+var a=[3,5,66,78,23,44,11,32,58];
+console.log(insertion_sort(a));
