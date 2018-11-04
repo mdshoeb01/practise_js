@@ -31,7 +31,8 @@ function insertion_sort(a){
     a[index+1]=cur;
 
   }
+  return a;
 }
 
-var a=[3,5,66,78,23,44,11,32,58];
+//var a=[3,5,66,78,23,44,11,32,58];
 console.log(insertion_sort(a));
