@@ -39,11 +39,19 @@ console.log(insertion_sort(a));
 
 //bubble sort
 function bubble_sort(a){
-  for(let i=0;i<a.length;i++){
-    let is_sorted=true;
-    while(a[i]>a[i+1]){
-      is_sorted=false;
-      
+    let is_sorted=false;
+    while(!is_sorted){
+      is_sorted=true;
+      for(let i=0;i<a.length;i++){
+        if(a[i]>a[i+1]) {
+          is_sorted=false;
+          let temp=a[i];
+          a[i]=a[i+1];
+          a[i+1]=temp;
+        }
+      }
     }
-  }
+  return a;
 }
+
+console.log(bubble_sort(a));
