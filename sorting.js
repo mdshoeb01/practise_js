@@ -36,3 +36,14 @@ function insertion_sort(a){
 
 //var a=[3,5,66,78,23,44,11,32,58];
 console.log(insertion_sort(a));
+
+//bubble sort
+function bubble_sort(a){
+  for(let i=0;i<a.length;i++){
+    let is_sorted=true;
+    while(a[i]>a[i+1]){
+      is_sorted=false;
+      
+    }
+  }
+}
